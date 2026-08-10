@@ -45,6 +45,7 @@ body{
 img,svg{max-width:100%;display:block;}
 a{color:inherit;}
 p{margin:0;}
+p,li{text-wrap:pretty;}
 ::selection{background:var(--accent);color:#fff;}
 :focus-visible{outline:2px solid var(--accent-hi);outline-offset:3px;border-radius:6px;}
 .shell{width:var(--shell);margin-inline:auto;}
@@ -242,6 +243,7 @@ h3{font-family:var(--sans);font-weight:700;font-size:clamp(1.15rem,1.6vw,1.375re
 .faq summary{
   list-style:none;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:1.25rem;
   padding:1.25rem 1.5rem;font-family:var(--display);font-weight:400;font-synthesis-weight:none;font-size:clamp(1.1875rem,1.8vw,1.5rem);letter-spacing:-.025em;line-height:1.35;
+  text-wrap:pretty;
 }
 .faq summary::-webkit-details-marker{display:none;}
 .faq summary:hover{color:var(--accent-hi);}
