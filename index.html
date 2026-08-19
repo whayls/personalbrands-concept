@@ -528,7 +528,8 @@ wistia-player[media-id='0dkamccfsn']:not(:defined){background:center / contain n
 
 /* ---------- §8 motion ---------- */
 /* nothing is hidden unless JS is present; every final state is the default */
-.lmask{display:block;overflow:hidden;padding-bottom:.04em;}
+/* ponytail: padding clears Fraunces descenders; negative margin cancels it so line spacing is unchanged */
+.lmask{display:block;overflow:hidden;padding-bottom:.18em;margin-bottom:-.14em;}
 .lin{display:block;}
 
 @media (prefers-reduced-motion:no-preference){
@@ -536,7 +537,7 @@ wistia-player[media-id='0dkamccfsn']:not(:defined){background:center / contain n
   .js .rv.in{opacity:1;transform:none;transition:opacity .85s var(--ease),transform .85s var(--ease);}
 
   /* 1 — hero headline rises line by line on load */
-  .js .lin{transform:translateY(108%);}
+  .js .lin{transform:translateY(130%);}
   .js .hero.lit .lin{transform:none;transition:transform .62s var(--ease);}
   .js .hero.lit .lmask:nth-child(2) .lin{transition-delay:.08s;}
   .js .hero .eyebrow,.js .hero .lede,.js .hero .stage,.js .hero .byline{opacity:0;transform:translateY(14px);}
