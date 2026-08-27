@@ -59,6 +59,10 @@ h3{font-family:var(--sans);font-weight:700;font-size:clamp(1.15rem,1.6vw,1.375re
 h1,h2,h3,h4{font-family:'Instrument Serif',Georgia,serif!important;font-weight:400!important;font-variation-settings:normal!important;}
 .accent{color:var(--accent-hi);}
 .lede{font-size:clamp(1rem,1.25vw,1.1875rem);line-height:1.75;color:var(--muted);max-width:60ch;}
+/* Avoid lone words at the end of responsive text blocks. */
+p,li,summary{text-wrap:pretty;}
+h1,h2,h3,h4,.lede{text-wrap:balance;}
+.keep{white-space:nowrap;}
 .eyebrow{
   display:inline-flex;align-items:center;gap:.6rem;
   padding:.44rem .9rem .44rem .7rem;border:1px solid var(--line-2);border-radius:100px;
@@ -636,7 +640,7 @@ FINISH: unreviewed and undocumented is unfinished; open items in the spec's §13
       <div class="hero__in">
         <p class="eyebrow"><span class="dot"></span> For coaches, consultants, agencies and firms</p>
         <h1><span class="lmask"><span class="lin">Why aren&rsquo;t you at</span></span><span class="lmask"><span class="lin">$3&ndash;5 million a year yet?</span></span></h1>
-        <p class="lede">It isn&rsquo;t traffic. The market can&rsquo;t tell you apart from the four other people it&rsquo;s considering &mdash; so it compares you on price.</p>
+        <p class="lede">It isn&rsquo;t traffic. The market can&rsquo;t tell you apart from the four other people it&rsquo;s considering, so it compares you <span class="keep">on price.</span></p>
       </div>
 
       <div class="stage" id="breakdown">
